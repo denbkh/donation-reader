@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/donation-reader.iml" filepath="$PROJECT_DIR$/donation-reader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/donation-reader_main.iml" filepath="$PROJECT_DIR$/.idea/modules/donation-reader_main.iml" group="donation-reader" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/donation-reader_test.iml" filepath="$PROJECT_DIR$/.idea/modules/donation-reader_test.iml" group="donation-reader" />
+    </modules>
+  </component>
+</project>
