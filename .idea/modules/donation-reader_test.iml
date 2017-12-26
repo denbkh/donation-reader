@@ -12,8 +12,9 @@
     <orderEntry type="module" module-name="donation-reader_main" />
     <orderEntry type="library" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" name="Gradle: javax.websocket:javax.websocket-api:1.0" level="project" />
-    <orderEntry type="library" name="Gradle: ro.pippo:pippo-freemarker:1.7.0" level="project" />
-    <orderEntry type="library" name="Gradle: ro.pippo:pippo-core:1.7.0" level="project" />
+    <orderEntry type="library" name="Gradle: ro.pippo:pippo-freemarker:1.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: ro.pippo:pippo-core:1.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.appengine:appengine-api-1.0-sdk:1.9.59" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.7" level="project" />
     <orderEntry type="library" name="Gradle: org.freemarker:freemarker:2.3.23" level="project" />
     <orderEntry type="library" name="Gradle: org.ocpsoft.prettytime:prettytime:3.2.5.Final" level="project" />

@@ -32,10 +32,11 @@ dependencies {
     providedCompile 'com.google.appengine:appengine:+'
 
 // Add your dependencies here.
-    def pippoVer = '1.7.0'
+    def pippoVer = '1.5.0'
 
     implementation "ro.pippo:pippo-core:$pippoVer"
     implementation "ro.pippo:pippo-freemarker:$pippoVer"
+    implementation 'com.google.appengine:appengine-api-1.0-sdk:1.9.59'
 }
 
 gretty {
