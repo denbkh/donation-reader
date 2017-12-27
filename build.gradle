@@ -36,7 +36,10 @@ dependencies {
 
     implementation "ro.pippo:pippo-core:$pippoVer"
     implementation "ro.pippo:pippo-freemarker:$pippoVer"
-    implementation 'com.google.appengine:appengine-api-1.0-sdk:1.9.59'
+    implementation "ro.pippo:pippo-gson:$pippoVer"
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.google.guava:guava:23.6-jre'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
 }
 
 gretty {
