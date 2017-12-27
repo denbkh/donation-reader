@@ -32,9 +32,13 @@ function ajaxErrorHandler(xhr, status, errorThrown) {
     handleError("Status: " + status + ", Error: " + errorThrown)
 }
 
+function showErrorAlert(message) {
+    $('#errorAlert').removeClass('hidden');
+    $('#errorAlertMessage').html(message);
+}
+
 function handleError(message) {
-    $('#error').removeClass('hidden');
-    $('#errorMessage').html(message);
+    showErrorAlert(message);
 
     stopRealTime();
 }
@@ -107,6 +111,10 @@ function openWebSocket(socketToked) {
             console.log(eventData.message);
             var arr = eventData.message;
             for (var i = 0; i < arr.length; i++) {
+
+                if (arr[i].currency !== "RUB") {
+                    showErrorAlert("Вам приходят донаты в валюте " + arr[i].currency + ". Фильтр суммы корректно работает только с валютой RUB. Поменять валюту можно на сайте streamlabs в разделе 'Donation Settings'")
+                }
 
                 if (arr[i].amount >= filterValue) {
                     var html = rowTemplate.render({

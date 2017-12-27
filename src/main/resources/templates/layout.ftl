@@ -45,10 +45,10 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="alert alert-danger <#if !error??> hidden </#if> "
-                     role="alert" id="error">
-                    <button onclick="$('#error').addClass('hidden')" type="button" class="close"
+                     role="alert" id="errorAlert">
+                    <button onclick="$('#errorAlert').addClass('hidden')" type="button" class="close"
                             aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <p id="errorMessage">${error!""}</p>
+                    <p id="errorAlertMessage">${error!""}</p>
                 </div>
             </div>
         </div>
