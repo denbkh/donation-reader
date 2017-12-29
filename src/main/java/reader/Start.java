@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.google.common.base.Strings;
 import com.google.gson.*;
+import freemarker.template.Configuration;
 import okhttp3.*;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -32,7 +33,8 @@ public class Start extends Application {
     private String redirectUri;
 
     public Start() {
-        setTemplateEngine(new FreemarkerTemplateEngine());
+
+        setTemplateEngine(new FreemarkerTemplateEngineEx());
     }
 
     @Override
@@ -183,5 +185,13 @@ public class Start extends Application {
         String tokenType;
         String refreshToken;
         int expiresIn;
+    }
+
+    private static class FreemarkerTemplateEngineEx extends FreemarkerTemplateEngine {
+        @Override
+        protected void init(Application application, Configuration configuration) {
+            configuration.setIncompatibleImprovements(Configuration.VERSION_2_3_27);
+            setFileExtension("ftlh");
+        }
     }
 }

@@ -1,4 +1,4 @@
-<#import "layout.ftl" as layout>
+<#import "layout.ftlh" as layout>
 
 <@layout.siteLayout>
 Work in progress ...

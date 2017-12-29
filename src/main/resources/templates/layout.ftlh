@@ -23,7 +23,7 @@
             <#if .main_template_name != "authorize.ftl" && .main_template_name != "setup.ftl" >
                 <ul class="nav navbar-nav">
                     <li class="<#if .main_template_name == "realtime.ftl">active </#if> ">
-                        <a href="/realtime">RealTime</a>
+                        <a href="/realtime">RealTime ${.output_format}</a>
                     </li>
                     <li class="<#if .main_template_name == "history.ftl">active </#if> ">
                         <a href="/history">History</a>
@@ -33,7 +33,7 @@
 
             <div class="collapse navbar-collapse">
                 <p class="navbar-text navbar-right">(${mode})
-                    <#--<a href="#" class="navbar-link">TODO</a>-->
+                <#--<a href="#" class="navbar-link">TODO</a>-->
                 </p>
             </div>
 

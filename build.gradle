@@ -37,6 +37,7 @@ dependencies {
     implementation "ro.pippo:pippo-core:$pippoVer"
     implementation "ro.pippo:pippo-freemarker:$pippoVer"
     implementation "ro.pippo:pippo-gson:$pippoVer"
+    implementation 'org.freemarker:freemarker:2.3.27-incubating'
     implementation 'com.google.code.gson:gson:2.8.2'
     implementation 'com.google.guava:guava:23.6-jre'
     implementation 'com.squareup.okhttp3:okhttp:3.9.1'
