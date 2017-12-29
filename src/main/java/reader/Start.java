@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.google.common.base.Strings;
 import com.google.gson.*;
+import freemarker.core.HTMLOutputFormat;
 import freemarker.template.Configuration;
 import okhttp3.*;
 import okhttp3.Request;
@@ -191,7 +192,7 @@ public class Start extends Application {
         @Override
         protected void init(Application application, Configuration configuration) {
             configuration.setIncompatibleImprovements(Configuration.VERSION_2_3_27);
-            setFileExtension("ftlh");
+            configuration.setOutputFormat(HTMLOutputFormat.INSTANCE);
         }
     }
 }

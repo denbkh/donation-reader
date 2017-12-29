@@ -12,9 +12,9 @@
     <orderEntry type="module" module-name="donation-reader_main" />
     <orderEntry type="library" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" name="Gradle: javax.websocket:javax.websocket-api:1.0" level="project" />
-    <orderEntry type="library" name="Gradle: ro.pippo:pippo-freemarker:1.5.0" level="project" />
-    <orderEntry type="library" name="Gradle: ro.pippo:pippo-gson:1.5.0" level="project" />
-    <orderEntry type="library" name="Gradle: ro.pippo:pippo-core:1.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: ro.pippo:pippo-freemarker:1.8.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Gradle: ro.pippo:pippo-gson:1.8.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Gradle: ro.pippo:pippo-core:1.8.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Gradle: org.freemarker:freemarker:2.3.27-incubating" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.2" level="project" />
     <orderEntry type="library" name="Gradle: com.google.guava:guava:23.6-jre" level="project" />

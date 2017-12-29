@@ -17,9 +17,7 @@
           <element id="dir-copy" path="$PROJECT_DIR$/out/production/resources" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Gradle: ro.pippo:pippo-freemarker:1.5.0" />
-          <element id="library" level="project" name="Gradle: ro.pippo:pippo-gson:1.5.0" />
-          <element id="library" level="project" name="Gradle: ro.pippo:pippo-core:1.5.0" />
+          <element id="library" level="project" name="Gradle: org.freemarker:freemarker:2.3.27-incubating" />
           <element id="library" level="project" name="Gradle: com.google.code.gson:gson:2.8.2" />
           <element id="library" level="project" name="Gradle: com.google.guava:guava:23.6-jre" />
           <element id="library" level="project" name="Gradle: com.squareup.okhttp3:okhttp:3.9.1" />
@@ -31,7 +29,9 @@
           <element id="library" level="project" name="Gradle: com.google.j2objc:j2objc-annotations:1.1" />
           <element id="library" level="project" name="Gradle: org.codehaus.mojo:animal-sniffer-annotations:1.14" />
           <element id="library" level="project" name="Gradle: com.squareup.okio:okio:1.13.0" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.freemarker/freemarker/2.3.27-incubating/fa71f754fd3c4123358c2b1e5eef630cd99d752f/freemarker-2.3.27-incubating.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.pippo/pippo-freemarker/1.8.0-SNAPSHOT/6f224c125d85644071a00090cef8e58eec9458c7/pippo-freemarker-1.8.0-SNAPSHOT.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.pippo/pippo-gson/1.8.0-SNAPSHOT/65fc1e5b746fa698a8be9426adc41bd8b92c68d9/pippo-gson-1.8.0-SNAPSHOT.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ro.pippo/pippo-core/1.8.0-SNAPSHOT/610f582241ef8959214e9c232c37da4516e9d905/pippo-core-1.8.0-SNAPSHOT.jar" />
         </element>
       </element>
     </root>

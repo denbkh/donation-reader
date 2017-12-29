@@ -14,9 +14,9 @@ repositories {   // repositories for JARs you access in your code
         url 'https://maven-central.storage.googleapis.com'             // Google's mirror of Maven Central
     }
 
-//maven {
-//  url 'https://oss.sonatype.org/content/repositories/snapshots' // SNAPSHOT repository if needed
-//}
+    maven {
+      url 'https://oss.sonatype.org/content/repositories/snapshots' // SNAPSHOT repository if needed
+    }
 
     jcenter()
     mavenCentral()
@@ -32,7 +32,7 @@ dependencies {
     providedCompile 'com.google.appengine:appengine:+'
 
 // Add your dependencies here.
-    def pippoVer = '1.5.0'
+    def pippoVer = '1.8.0-SNAPSHOT'
 
     implementation "ro.pippo:pippo-core:$pippoVer"
     implementation "ro.pippo:pippo-freemarker:$pippoVer"
