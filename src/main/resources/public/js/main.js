@@ -29,7 +29,8 @@ function startRealTime(csrfTokenValue) {
 }
 
 function ajaxErrorHandler(xhr, status, errorThrown) {
-    handleError("Status: " + status + ", Error: " + errorThrown)
+    handleError("Status: " + status + ", Code: " + xhr.status + ", ReadyState: " + xhr.readyState +
+        ", Error: " + errorThrown);
 }
 
 function showErrorAlert(message) {
