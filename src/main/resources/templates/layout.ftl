@@ -1,3 +1,4 @@
+<#ftl output_format="HTML">
 <#macro siteLayout>
 <!DOCTYPE html>
 <html lang="en">

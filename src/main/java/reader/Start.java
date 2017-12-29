@@ -192,7 +192,6 @@ public class Start extends Application {
         @Override
         protected void init(Application application, Configuration configuration) {
             configuration.setIncompatibleImprovements(Configuration.VERSION_2_3_27);
-            configuration.setOutputFormat(HTMLOutputFormat.INSTANCE);
         }
     }
 }

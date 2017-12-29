@@ -1,4 +1,4 @@
-<#--<#global hideNavBar=true>-->
+<#ftl output_format="HTML">
 <#import "layout.ftl" as layout>
 
 <@layout.siteLayout>
