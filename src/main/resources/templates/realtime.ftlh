@@ -48,17 +48,7 @@
             </tbody>
         </table>
 
-
     </div>
 </div>
-
-<script id="rowTemplate" type="text/x-jsrender">
-    <tr>
-        <td>{{:date}}</td>
-        <td>{{:name}}</td>
-        <td>{{:amount}}</td>
-        <td>{{:message}}</td>
-    </tr>
-</script>
 
 </@layout.siteLayout>

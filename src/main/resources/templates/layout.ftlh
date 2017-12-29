@@ -23,7 +23,7 @@
             <#if .main_template_name != "authorize.ftl" && .main_template_name != "setup.ftl" >
                 <ul class="nav navbar-nav">
                     <li class="<#if .main_template_name == "realtime.ftl">active </#if> ">
-                        <a href="/realtime">RealTime ${.output_format}</a>
+                        <a href="/realtime">RealTime</a>
                     </li>
                     <li class="<#if .main_template_name == "history.ftl">active </#if> ">
                         <a href="/history">History</a>
@@ -68,7 +68,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/0.9.90/jsrender.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="${publicAt('js/main.js')}"></script>
 </body>
 

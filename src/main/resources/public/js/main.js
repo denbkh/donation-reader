@@ -90,8 +90,16 @@ function openWebSocket(socketToked) {
     streamlabs = io("https://sockets.streamlabs.com?token=" + socketToked);
 
     var table = document.getElementById("donationsTable");
-    var rowTemplate = $.templates("#rowTemplate");
     var filterValue = Number($('#moneyFilter').val());
+
+    var newRowTemplate = _.template(
+        "<tr>" +
+        "    <td><%- date %></td>" +
+        "    <td><%- name %></td>" +
+        "    <td><%- amount %></td>" +
+        "    <td><%- message %></td>" +
+        "</tr>"
+    );
 
     streamlabs.on('connect', function () {
         $('#startRealTimeButton').toggleClass('hidden', true);
@@ -117,14 +125,14 @@ function openWebSocket(socketToked) {
                 }
 
                 if (arr[i].amount >= filterValue) {
-                    var html = rowTemplate.render({
+                    var newRowHtml = newRowTemplate({
                         date: moment().format('HH:mm:ss'),
                         name: arr[i].from,
                         amount: arr[i].amount,
                         message: arr[i].message === "" ? "(нет коммента)" : arr[i].message
                     });
 
-                    table.insertAdjacentHTML('beforeend', html);
+                    table.insertAdjacentHTML('beforeend', newRowHtml);
                 }
 
                 console.log(arr[i].from + " " + arr[i].amount + " " + arr[i].message);
